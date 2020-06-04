@@ -10,10 +10,12 @@ Expects ruby 2.5.7 or later.
 
 ```
 bundle install
-bundle exec rackup
+./start.sh
 ```
 
-2. Open your browser to the port that is displayed in your terminal (e.g. http://localhost:9292)
+This will open the results in your browser automatically.
+
+If for some reason your browser does not automatically launch, please visit [http://localhost:7272].
 
 ## To run the test suite:
 

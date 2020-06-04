@@ -10,3 +10,6 @@ app = proc do |_env|
 end
 
 run app
+
+# Automatically open server in browser, for convenience (for Mac OS X)
+`open "http://localhost:7272"`
