@@ -15,7 +15,7 @@ bundle install
 
 This will open the results in your browser automatically.
 
-If for some reason your browser does not automatically launch, please visit [http://localhost:7272].
+If for some reason your browser does not automatically launch, please visit [http://localhost:7272](http://localhost:7272).
 
 ## To run the test suite:
 
