@@ -1,0 +1,44 @@
+[
+  {
+    "field_name": "RoleName",
+    "label": "What is the name of the role?",
+    "required": true,
+    "field_type": "select",
+    "options": [
+      "Customer Success",
+      "Fullstack Engineer",
+      "Product Manager"
+    ],
+    "visibility_rules": null
+  },
+
+  {
+    "field_name": "PrimaryBusiness",
+    "label": "What is your primary business?",
+    "required": true,
+    "field_type": "select",
+    "options": [
+      "Accounting",
+      "Software development",
+      "Landscaping"
+    ],
+    "visibility_rules": null
+  },
+
+  {
+    "field_name": "TechnicalBackground",
+    "label": "Is a technical background required?",
+    "required": true,
+    "field_type": "select",
+    "options": [
+      "Yes",
+      "No"
+    ],
+    "visibility_rules": {
+      "$or": [
+        { "RoleName": "Fullstack Engineer" },
+        { "RoleName": "Product Manager", "PrimaryBusiness": "Software development" }
+      ]
+    }
+  }
+]

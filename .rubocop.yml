@@ -1,0 +1,13 @@
+Layout/MultilineMethodCallIndentation:
+  EnforcedStyle: indented
+
+Metrics/BlockLength:
+  Max: 5
+  Exclude:
+  - 'spec/**/*.rb'
+
+Metrics/LineLength:
+  Max: 90
+
+Style/Documentation:
+  Enabled: false
