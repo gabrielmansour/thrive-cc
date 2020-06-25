@@ -8,10 +8,6 @@ class RulesEngine
   def visible?(other_responses)
     return true unless @rules&.any?
 
-    @rules['$or'].each do |condition_hash|
-      return true if other_responses >= condition_hash
-    end
-
-    false
+    @rules['$or'].any? { |condition_hash| other_responses >= condition_hash }
   end
 end
